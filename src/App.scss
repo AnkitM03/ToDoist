@@ -21,14 +21,14 @@ body {
 }
 
 .header {
-  border-bottom: solid 1px #ff2442;
-  background-color: #fdd2bf;
+  border-bottom: solid 1px #d79771;
+  background-color: #c3ba85;
   //box-shadow: 0 1px 2px #ff6b6b;
   height: 54px;
   width: 100%;
 
   img {
-    width: 124px;
+    width: auto;
     height: 44px;
   }
 
@@ -38,6 +38,7 @@ body {
     display: flex;
     align-items: center;
     margin: auto;
+    justify-content: center;
   }
 }
 
@@ -53,14 +54,14 @@ body {
   height: 100vh;
   padding-top: 74px;
   border-right: 1px solid #f1f1f1;
-  background-color: #fafafa;
+  background-color: #f0f0cb;
 
   div {
     margin-bottom: 10px;
     cursor: pointer;
     padding: 15px;
     &.active {
-      background-color: rgb(233, 175, 175);
+      background-color: #dad5ab;
     }
     .icon {
       margin-right: 10px;
@@ -106,9 +107,9 @@ body {
       justify-content: space-between;
 
       .add-btn {
-        background-color: #db4c15;
-        color: white;
-        border: 1px solid transparent;
+        background-color: #f0f0cb;
+        color: rgb(0, 0, 0);
+        border: 1px solid #d9cab3;
         margin-right: 5px;
         font-weight: bold;
         font-size: 13px;
@@ -116,6 +117,7 @@ body {
         border-radius: 3px !important;
         &:disabled {
           background-color: gray;
+          color: white;
         }
         &:active {
           transform: scale(0.85);
@@ -139,7 +141,7 @@ body {
       display: flex;
       justify-content: space-between;
       &:not(:last-child) {
-        border-bottom: 1px solid palevioletred;
+        border-bottom: 1px solid #c3ba85;
       }
     }
   }
